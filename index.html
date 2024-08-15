@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Søppelvarer Inc. AS</title>
+</head>
+<body>
+
+    <header id="header">
+        <div id = "header-container">
+            <h1>Søppelvarer Incorporated AS</h1>
+            <img src="trashman2.png" class="logo">
+        </div>  
+
+    </header>
+
+    <div class="grid">
+        <div class="varer">
+            <div id="melk" onclick="addToCart(this)" data-img="melk.jpg">Melk</div>
+            <div id="banan" onclick="addToCart(this)" data-img="banan.jpg">Banan</div>
+            <div id="eple" onclick="addToCart(this)" data-img="eple.jpg">Eple</div>
+            <div id="sjoko" onclick="addToCart(this)" data-img="sjokolade.jpg">Sjokolade</div>
+            <div id="dopapir" onclick="addToCart(this)" data-img="dopapir.jpg">Dopapir</div>
+            <div id="energi" onclick="addToCart(this)" data-img="energi.jpg">Egg</div>
+        </div>
+
+        <div class="textBox">
+            <div id="textBox1">
+                <h2>
+                    <p>Vi i Søppelvarer AS ønsker dere hjertelig velkommen til denne mindre funksjonelle nettside!</p>
+                    <p>Her har vi verdens minste utvalg av varer for dere å trykke på for morroskyld, uten noe særlig funksjon</p>
+                    <p>Er du VELDIG modig så legger du gjerne igjen kontoinformasjonen din her</p>
+                    <p>Vi oppdaterer selvfølgelig nettsiden etterhvert hvor de modige kan få legge igjen informasjonen!</p>
+                </h2>
+            </div>
+        </div>
+        <div class="dropdown">
+        <button class="dropButton" onclick="toggleDropdown();">Trykk her for å se handlekurv</button>
+            <div id="myDropdown" class="dropdown-content">
+                <button class="betal" id="betalKnapp" onclick="payUp()";>Trykk for å betale</button>
+            </div>
+        </div>
+
+    </div>
+<footer>
+    <p>Frekkaste sjappa sør for Lindesnes ™</p>
+    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+        <button id="support">Kontakt oss</button>
+    </a>
+</footer>
+
+
+
+</body>
+<script src="index.js" async defer></script>
+</html>
